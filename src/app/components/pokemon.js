@@ -19,7 +19,7 @@ function Pokemon() {
     const [attack, setAttack] = useState("")
     const [defense, setDefense] = useState("")
     const [speed, setSpeed] = useState("")
-    const [line, setLine] = useState('../icons/line.svg')
+
     const url = "https://pokeapi.co/api/v2/pokemon/95"
     useEffect(() => {
         fetch(url)
@@ -73,6 +73,7 @@ function Pokemon() {
                     </div>
                     <div className={style.aboutBox}>
                         <p className={style.descname} >Stats</p>
+                        <Image src="/line.svg" width={35} height={5} />
                     </div>
                     <div className={style.Stats}>
                         <div className={style.subtitle}>
